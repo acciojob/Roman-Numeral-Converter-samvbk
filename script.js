@@ -8,7 +8,7 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
-	const lookup{
+	const lookup = {
 		['M', 1000], 
 	    ['CM', 900], 
 	    ['D', 500], 
