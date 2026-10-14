@@ -1,5 +1,5 @@
 function convertToRoman(num) {
-  	const obj = {
+  	const lookup = {
       ['M',1000], 
       ['D', 500], 
       ['C', 100], 
@@ -10,10 +10,10 @@ function convertToRoman(num) {
     };
 	let str = "";
 
-	for (const[numrel , value] of obj) {
-		while (num>value) {
-			str+=numrel;
-			num-=value;
+	for (const[numrel , value] of lookup) {
+		while (num >= value) {
+			str += numrel;
+			num -= value;
 		}
 	}
 	return str;
