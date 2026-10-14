@@ -51,7 +51,8 @@ function convertToRoman(num) {
 	// let i = Math.floor((num-(m*1000)-(d*500)-(c*100)-(l*50)-(l*10)-(v*5))/1);
 
 	let str="";
-	str += m*"M"+d*"D"+c*"C"+l*"L"+x*"X"+i;
+	str += "M".repeat(m) + "D".repeat(d) + "C".repeat(c) + "L".repeat(l) + "X".repeat(x) + i;
+	// str += m*"M"+d*"D"+c*"C"+l*"L"+x*"X"+i;
 	return str;
 
 }
